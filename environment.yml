@@ -1,12 +1,17 @@
+name: waves
 channels:
-- conda-forge
+  - conda-forge
 dependencies:
-- python=
-# Jupyter
-- jupyterlab
-# Python Kernel
-- matplotlib
-- numpy
-- scipy
-- pip
-- h5py
+  - scipy
+  - h5py
+  - numpy
+  - pip
+  - python
+  - jupyterlab
+  - matplotlib
+  - jupytext
+  - pandas
+  - pip:
+      - ngsolve==6.2.2606
+      - git+https://github.com/NGSolve/ngs-special-functions.git
+      - webgui_jupyter_widgets
